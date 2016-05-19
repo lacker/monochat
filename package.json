@@ -1,0 +1,23 @@
+{
+  "name": "monochat",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacker/monochat.git"
+  },
+  "author": "Kevin Lacker",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/lacker/monochat/issues"
+  },
+  "homepage": "https://github.com/lacker/monochat#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
