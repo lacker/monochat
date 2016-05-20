@@ -2,12 +2,11 @@ const readline = require('readline');
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 const firebase = require('firebase');
-
 const config = {
-  apiKey: "AIzaSyBdcfWpyvzuSEyS03M6RAIcbneQKkINOHw",
-  authDomain: "project-8181368540383796399.firebaseapp.com",
-  databaseURL: "https://project-8181368540383796399.firebaseio.com",
-  storageBucket: "project-8181368540383796399.appspot.com",
+  apiKey: "AIzaSyBj2jKu2q1ggkwhjr5vtSISBkUB5FTiWU0",
+  authDomain: "monochat2.firebaseapp.com",
+  databaseURL: "https://monochat2.firebaseio.com",
+  storageBucket: "",
 };
 firebase.initializeApp(config);
 
@@ -19,10 +18,7 @@ rl.prompt();
 rl.on('line', (line) => {
   const message = line.trim();
 
-  // Send the message upstream
-  firebase.database().ref('chats').push({
-    message: message,
-  });
+  // TODO: Send the message upstream
 
   rl.prompt();
 }).on('close', () => {
