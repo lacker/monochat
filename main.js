@@ -19,7 +19,10 @@ rl.prompt();
 rl.on('line', (line) => {
   const message = line.trim();
 
-  // TODO: Send the message upstream
+  // Send the message upstream
+  firebase.database().ref('chats').push({
+    message: message,
+  });
 
   rl.prompt();
 }).on('close', () => {
